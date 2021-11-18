@@ -371,7 +371,7 @@ extension DataCache {
         return (urlsToDelete, diskCacheSize, cachedFiles)
     }
     
-    func cachePath(forKey key: String) -> String {
+    public func cachePath(forKey key: String) -> String {
         let fileName = key.md5
         return (cachePath as NSString).appendingPathComponent(fileName)
     }
